@@ -1,3 +1,5 @@
+import 'package:My_First_Project/app_sign_in/sign_in_button.dart';
+import 'package:My_First_Project/app_sign_in/social_sign_in_button.dart';
 import 'package:My_First_Project/shared/custom_raised_button.dart';
 import 'package:flutter/material.dart';
 
@@ -26,15 +28,49 @@ class SignInPage extends StatelessWidget {
               style: TextStyle(fontSize: 32, fontWeight: FontWeight.w600),
             ),
             SizedBox(
+              height: 40,
+            ),
+            SocialSignInButton(
+              assetName: 'images/google-logo.png',
+              text: 'Sign in with Google',
+              textColor: Colors.black87,
+              color: Colors.white,
+              onPressed: () {},
+            ),
+            SizedBox(
               height: 8,
             ),
-            CustomRaisedButton(
-              child: Text(
-                'Sign in with Google',
-                style: TextStyle(color: Colors.black87, fontSize: 15),
-              ),
-              color: Colors.white,
-              borderRadius: 4.0,
+            SocialSignInButton(
+              assetName: 'images/facebook-logo.png',
+              text: 'Sign in with Facebook',
+              textColor: Colors.white,
+              color: Color(0xFF334092),
+              onPressed: () {},
+            ),
+            SizedBox(
+              height: 8,
+            ),
+            SignInButton(
+              text: 'Sign in with Email',
+              textColor: Colors.white,
+              color: Colors.teal[700],
+              onPressed: () {},
+            ),
+            SizedBox(
+              height: 8,
+            ),
+            Text(
+              'or',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 14, color: Colors.black),
+            ),
+            SizedBox(
+              height: 8,
+            ),
+            SignInButton(
+              text: 'Go anonymous',
+              textColor: Colors.black,
+              color: Colors.lime[300],
               onPressed: () {},
             ),
           ],
