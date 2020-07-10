@@ -1,4 +1,5 @@
-import 'package:My_First_Project/app_sign_in/sign_in_page.dart';
+import 'package:My_First_Project/app/app_sign_in/sign_in_page.dart';
+import 'package:My_First_Project/app/landing.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,6 +14,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.indigo,
         ),
-        home: SignInPage());
+        home: LandingPage());
   }
 }
